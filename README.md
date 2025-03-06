@@ -3,11 +3,12 @@
 ## Elkészült feladat
 **Titok Készítése**: használható rá curl és postman egyaránt, lent látható a curl implementációja.
 ```bash
-    curl -X POST http://localhost:3000/v1/secret -H "Content-Type: application/x-www-form-urlencoded"  -d "secret=test&expireAfterViews=2&expireAfter=60"
+    curl -X POST https://secret.loosapp.com/v1/secret -H "Content-Type: application/x-www-form-urlencoded"  -d "secret=test&expireAfterViews=2&expireAfter=60"
 ```
 **Titok lekérdezése**: 
 ```bash
-    curl http://localhost:3000/v1/secret/{hash} -H "Accept: application/xml"
+    curl https://secret.loosapp.com/v1/secret/{hash} -H "Accept: application/xml"
+    // or application/json
 ```
 Itt megadható, hogy xml vagy json formátumban szeretnénk lekérdezni a titkot.
 ## Introduction
