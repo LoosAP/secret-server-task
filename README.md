@@ -1,6 +1,9 @@
 # Secret Server Coding Task
 
 ## Elkészült feladat
+
+Az elkészült feladatot raspberry pi-m ről hostolom, pm2 és nginx segítségével, [itt](https://secret.loosapp.com).
+
 **Titok Készítése**: használható rá curl és postman egyaránt, lent látható a curl implementációja.
 ```bash
     curl -X POST https://secret.loosapp.com/v1/secret -H "Content-Type: application/x-www-form-urlencoded"  -d "secret=test&expireAfterViews=2&expireAfter=60"
