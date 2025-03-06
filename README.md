@@ -1,5 +1,15 @@
 # Secret Server Coding Task
 
+## Elkészült feladat
+**Titok Készítése**: használható rá curl és postman egyaránt, lent látható a curl implementációja.
+```bash
+    curl -X POST http://localhost:3000/v1/secret -H "Content-Type: application/x-www-form-urlencoded"  -d "secret=test&expireAfterViews=2&expireAfter=60"
+```
+**Titok lekérdezése**: 
+```bash
+    curl http://localhost:3000/v1/secret/{hash} -H "Accept: application/xml"
+```
+Itt megadható, hogy xml vagy json formátumban szeretnénk lekérdezni a titkot.
 ## Introduction
 Your task is to implement a secret server. The secret server can be used to store and share secrets
 using the random generated URL. But the secret can be read only a limited number of times after that
